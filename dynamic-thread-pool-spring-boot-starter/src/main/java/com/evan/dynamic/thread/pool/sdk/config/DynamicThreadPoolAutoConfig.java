@@ -24,6 +24,7 @@ public class DynamicThreadPoolAutoConfig {
             applicationName = "缺省的";
             logger.warn("动态线程池，启动提示。SpringBoot 应用未配置 spring.application.name 无法获取到应用名称！");
         }
+        logger.info("thread pool info:{}", threadPoolExecutorMap.keySet());
         return new String();
     }
 }
